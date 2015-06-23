@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, user-scalable = yes">
 
-    <link rel="stylesheet" href="web/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/poo/web/css/bootstrap.min.css">
 
     <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
     <!-- Importing jquery in case there are jq scripts in the middle of the page -->

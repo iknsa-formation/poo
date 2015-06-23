@@ -22,6 +22,7 @@ if(!isset($uri[0]) || $uri[0] == '') {
 }
 else {
     $bundle = $uri[0];
+    unset($uri[0]);
 }
 
 try {

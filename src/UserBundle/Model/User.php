@@ -4,10 +4,10 @@ namespace UserBundle\Model;
 
 class User
 {
-    private $nom;
-    private $email;
-    private $salt;
-    private $password;
+    protected $nom;
+    protected $email;
+    protected $salt;
+    protected $password;
 
 
     public function __construct(array $data)

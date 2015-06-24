@@ -2,6 +2,8 @@
 
 namespace UserBundle\Controller;
 
+require_once "src/UserBundle/Model/User.php";
+
 class UserController
 {
     public function indexAction()
@@ -13,11 +15,22 @@ class UserController
 
     public function showAction($id)
     {
-        // var_dump($_SERVER['users']);
-        // $model = $
+        foreach ($id as $key => $value) {
+            $userId = $value;
+        }
+
+        foreach ($_SERVER['users'] as $key => $value) {
+
+            if($value["id"] == $userId) {
+                $user = $value;
+            }
+        }
+
+        $userObject = new \UserBundle\Model\User($user);
+
         return array(
             'template' => 'show',
-            'user' => $id
+            'user' => $userObject
         );
     }
 }

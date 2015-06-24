@@ -49,7 +49,7 @@
     </nav>
 </div>
 
-    
+<?php if(isset($error) && !empty($error)): ?>
 <section class="container">
     <div class="alert alert-danger" role="alert">
         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -57,6 +57,7 @@
         Erreur s'il y en a
     </div>
 </section>
+<?php endif; ?>
 
 <main class="row">
     <div class="container">

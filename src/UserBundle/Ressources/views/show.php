@@ -1,1 +1,1 @@
-<?php // var_dump($actionToCall); ?>
+<?php var_dump($actionToCall); ?>

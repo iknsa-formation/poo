@@ -8,7 +8,7 @@ if(isset($routes))
     
     $routeName = $routes[$uri[1]];
 
-    foreach ($routes[$uri[1]] as $key => $value) {
+    foreach ($routeName as $key => $value) {
         $controller = $key;
         $action = $value;
     }
@@ -26,7 +26,7 @@ if(!empty($uri))
 if (isset($bundle)) {
     require_once "src/" . ucfirst($bundle) . "Bundle/Controller/$controller.php";
 
-    $controller_name = "\\" . ucfirst($bundle) . "\\Controller\\$controller";
+    $controller_name = "\\" . ucfirst($bundle) . "Bundle\\Controller\\$controller";
 
     $$controller = new $controller_name();
 

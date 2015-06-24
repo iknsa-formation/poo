@@ -17,6 +17,7 @@ $uri = [];
 foreach ($url as $key => $value) {
     $uri[] = $value;
 }
+
 if(!isset($uri[0]) || $uri[0] == '') {
     $bundle = 'app';
 }

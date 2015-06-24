@@ -1,6 +1,6 @@
 <?php
 
-namespace User\Controller;
+namespace UserBundle\Controller;
 
 class UserController
 {
@@ -13,7 +13,7 @@ class UserController
 
     public function showAction($id)
     {
-        var_dump($_SERVER['users']);
+        // var_dump($_SERVER['users']);
         // $model = $
         return array(
             'template' => 'show',

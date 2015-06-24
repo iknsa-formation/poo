@@ -1,6 +1,6 @@
 <?php
 
-$contents = array(
+$_SERVER['contents'] = array(
     array(
         'auteur' => "Aurelie",
         "titre" => "Hello",

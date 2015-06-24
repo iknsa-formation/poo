@@ -60,7 +60,11 @@
 
 <main class="row">
     <div class="container">
-        main content
+        <?php
+        if(isset($template) && !empty($template)) {
+            require_once $template;
+        }
+        ?>
     </div>
 </main>
 

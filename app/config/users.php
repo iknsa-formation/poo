@@ -1,6 +1,6 @@
 <?php
 
-$users = [
+$_SERVER['users'] = [
     [
         "nom" => "Khalid",
         "email" => "khalidsookia@gmail.com",

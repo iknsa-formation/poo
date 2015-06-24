@@ -2,18 +2,21 @@
 
 $_SERVER['users'] = [
     [
+        "id" => "1",
         "nom" => "Khalid",
         "email" => "khalidsookia@gmail.com",
         "salt" => "123456789",
         "password" => "f19e3760488202ab92a6ea356c2c9fe8"
     ],
     [
+        "id" => "2",
         "nom" => "Aurelie",
         "email" => "aurelie.birot@club.fr",
         "salt" => "azerty",
         "password" => "1e26ada73f2e1b5a31087357559a4c4f"
     ],
     [
+        "id" => "3",
         "nom" => "Gilles",
         "email" => "gilles.fourot@atos.net",
         "salt" => "wxcv",

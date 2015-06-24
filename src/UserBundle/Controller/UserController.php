@@ -8,8 +8,17 @@ class UserController
 {
     public function indexAction()
     {
+        foreach ($_SERVER['users'] as $value) {
+            $users[] = $value;
+        }
+
+        foreach ($users as $value) {
+            $user[] = new  \UserBundle\Model\User($value);
+        }
+
         return array(
-            'template' => 'index'
+            'template' => 'index',
+            'user' => $user
         );
     }
 
